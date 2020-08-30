@@ -1,0 +1,89 @@
+.evento-chat{
+    position: relative;
+    background-color: #F2F5F8;
+    
+
+    .chat-body{
+        height: 25rem;
+        overflow-y: scroll;
+    }
+    
+    .chat-header{
+        height: 3rem;
+        background-color: $clr6;
+        color: $clr5;
+        justify-items: center;
+
+        p{
+            text-align: center;
+            margin: 0;
+            padding: 0.5rem 0rem
+        }
+    }
+
+    
+        input{
+            outline: none;
+            border: none;
+            border: 2px $clr7 solid;
+            padding: 0.3rem 1rem;
+            margin-right: 0.0rem;
+            min-width: 18.3rem;
+            // max-width: 26rem;
+        }
+    
+        ::placeholder{
+            color: $clr3;
+        }
+        .chat-input{
+            position: absolute;
+            left: 0rem;
+            top: 28rem;
+            border: none;
+            // max-width: 26rem;
+        }
+    
+        .send-btn{
+            display:inline-block;
+            color: $clr5;
+            background-color: $clr6;
+            font-size: 0.9rem;
+            text-decoration: none;
+            padding: 0.4rem 0.6rem;
+            outline: none;
+            border: none;
+            border-radius: 0.2rem;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+    
+    
+
+
+    ul{
+        list-style: none;
+        padding-top: 0.5rem;
+        padding-left: 0.5rem;
+        
+        
+    }
+
+    li{
+      background: #0084ff;
+      padding: 8px;
+      height: fit-content;
+      width: fit-content;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      border-radius: 1rem;
+      color: $clr5;
+      text-align: left;
+      font-size: 0.8rem;
+
+      span{
+          font-weight: bold;
+      }
+    }
+
+}

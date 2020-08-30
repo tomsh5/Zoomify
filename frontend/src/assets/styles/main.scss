@@ -1,0 +1,29 @@
+// SETUP
+
+@import './setup/mixins.scss';
+@import './setup/variables.scss';
+@import './setup/typography.scss';
+
+// BASICS
+@import './basics/base.scss';
+@import './basics/layout.scss';
+@import './basics/helpers.scss';
+
+// VIEWS 
+@import './views/evento-app.scss';
+@import './views/home.scss';
+@import './views/evento-login.scss';
+@import './views/about.scss';
+// @import './views/user-profile';
+@import './views/evento-details.scss';
+@import './views/evento-edit.scss';
+// @import './views/dashboard';
+
+// CMPS 
+@import './cmps/nav-bar.scss';
+@import './cmps/evento-footer.scss';
+@import './cmps/evento-list.scss';
+@import './cmps/evento-filter.scss';
+@import './cmps/evento-preview.scss';
+@import './cmps/evento-chat.scss';
+

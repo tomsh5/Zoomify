@@ -1,0 +1,41 @@
+.details-hero {
+
+    h1 {
+        position: absolute;
+        color: white;
+        text-shadow: 1px 1px 3px black;
+        // justify-content: center;
+        text-align: center;
+        margin: 6% 0 0 40%;
+        // width: 10rem;
+        font-size: 3rem;
+        display: inline;
+    }
+    
+    .hero-list-img {
+        width: 100%;
+    }
+    
+    }
+    
+.evento-app-content {
+    margin: 0 5rem;
+
+    .list-filter {
+        // border-bottom: 1px solid  rgb(224, 224, 224);
+        margin-bottom: 1.5rem;
+        
+    }
+    // .evento-list {
+    //     margin: 2rem 5rem;
+    // }
+
+}
+    .evento-list {
+        margin: 2rem 5rem;
+    }
+
+   .isLoading{
+    display: flex;
+    justify-content: center;
+    }

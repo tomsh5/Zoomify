@@ -1,0 +1,18 @@
+.list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    // justify-items: auto;
+    row-gap: 3.5rem;
+    column-gap: 2rem;
+    // margin-top: 1rem;
+
+
+  a {
+    text-decoration: none;
+    // color: #22292f
+    color: #474959
+  }
+
+}

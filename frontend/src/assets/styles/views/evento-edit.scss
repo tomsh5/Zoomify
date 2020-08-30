@@ -1,0 +1,115 @@
+.evento-edit {
+    align-items: center;
+    button {
+        color: black;
+        margin: 2rem 0 2rem 0;
+        font-size: 0.8rem;
+        font-weight: lighter;
+        text-decoration: none;
+        padding: 0.5rem 0.5rem;
+        outline: none;
+        border-style: solid;
+        border-color: #5e17eb;
+        border-radius: 0.5rem;
+        width: 8rem;
+        height: 2.5rem;
+        text-decoration: none;
+        // margin: 2rem auto;
+        cursor: pointer;
+   }
+    .back-btn {
+        background-color: #efefef;
+        &:hover {
+            color: black;
+            background-color: white;
+       }
+   }
+    .add-btn {
+        color: white;
+        background-color: #5e17eb;
+        &:hover {
+            // color: black;
+            background-color: #4f15c4;
+       }
+   }
+   h1 {
+        text-shadow: 1px 1px 3px black;
+        position: absolute;
+        color: white;
+        text-align: center;
+        margin: 6% 0 0 36%;
+        font-size: 3rem;
+        display: inline;
+
+   }
+    h2 {
+        position: absolute;
+        text-align: center;
+        // font-size: 1.5rem;
+        margin-left: 35%;
+   }
+    h3 {
+        text-align: center;
+        font-size: 1rem;
+   }
+    .add-desc-placeholder {
+        height: 6rem;
+        border-radius: 0.5rem;
+        resize: none;
+   }
+}
+.add-event-placeholder {
+    background-color: white;
+    // border-color: rgb(94, 23, 235);
+    border-color: #bbc1e1;
+    border-image: initial;
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-width: 1px;
+    // color: rgb(94, 23, 235);
+    height: 2.5rem;
+    outline: none;
+    padding: 1rem;
+    width: 20rem;
+}
+.add-event-date {
+    background-color: white;
+    // border-color: rgb(94, 23, 235);
+    border-color: #bbc1e1;
+    border-image: initial;
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-width: 1px;
+    // color: rgb(94, 23, 235);
+    color: #757575;
+    height: 2.5rem;
+    outline: none;
+    padding: 1rem;
+    width: 9rem;
+    margin-right: 1rem;
+}
+.add-event-time {
+    background-color: white;
+    // border-color: rgb(94, 23, 235);
+    border-color: #bbc1e1;
+    border-image: initial;
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-width: 1px;
+    // color: rgb(94, 23, 235);
+    color: #757575;
+    height: 2.5rem;
+    outline: none;
+    padding: 1rem;
+    width: 9rem;
+    margin-left: 1rem;
+}
+
+
+.hero-edit-img {
+    width: 100%;
+}
+
+// .edit-hero {
+//     text-align: center;
+// }

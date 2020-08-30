@@ -1,0 +1,39 @@
+.search-bar {
+  display: flex;
+  padding: 0.8rem;
+  justify-content: space-around;
+  margin: 0 8rem;
+  
+ 
+
+  
+  .el-button,.el-input__inner{
+    border-radius: 0.5rem;
+      &:hover{
+          background-color: #bbd9f025;
+          // border: rgba(55, 62, 73, 0.719);
+          }
+        } 
+
+
+.el-select {
+  max-width: 200px;
+         
+  }
+// .el-button {
+//   max-width: 100px;
+  
+// }
+.el-input.search {
+  max-width: 200px;
+      
+  
+  .el-input__inner{
+    border-radius: 0.5rem;
+      &:hover{
+          background-color: #bbd9f025;
+          }  
+
+  }
+}
+}

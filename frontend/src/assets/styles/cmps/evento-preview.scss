@@ -1,0 +1,88 @@
+.evento-preview {
+    background-color: white;
+    color: #222325;
+    break-inside: avoid;
+    transition: 0.3s;
+    break-inside: avoid-column;
+    page-break-inside: avoid;
+    width: 18rem;
+    height: 25rem;
+    border: 1rem;
+    border-width: 0.1rem;
+    border-color: #e5e5e5;
+    border-radius: 0.5rem;
+    border-style: solid;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: .15s ease-in-out;
+    -webkit-box-orient: vertical;
+    -webkit-column-break-inside: avoid;
+    overflow: hidden;
+  
+    .evento-img {
+        max-width: 18rem;
+        border-top-left-radius: 0.3rem;
+        border-top-right-radius: 0.3rem;
+   }
+    .card-txt {
+        padding: 0.2rem 1rem;
+        .star {
+            color: #ffbf00;
+            // margin-bottom: 1rem;
+            .raters {
+                color: #b2b2b2;
+                font-size:0.8rem;
+           }
+       }
+        .event-star-date {
+            display: flex;
+            // justify-content: center;
+       }
+   
+    .card-h3 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 800;
+        font-size: 0.9rem;
+     
+   }
+    .card-h4 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: lighter;
+        font-size: 0.9rem;
+        margin-bottom: 0;
+   }
+    .creator-img {
+        width: 2.9rem;
+        height: 2.9rem;
+        margin-right: 1rem;
+        border-radius: 1.5rem;
+        margin-top: 0.7rem;
+   }
+    .creator-details {
+        display: flex;
+        // align-items: center;
+   }
+   .event-date {
+       margin-top: 1.2rem;
+       font-size: 0.8rem;
+       color: #434343;
+       padding-left: 0.5rem;
+  }
+
+  .prev-price-tag {
+      color: grey;
+      font-size: 0.75rem;
+  }
+
+  }
+
+  }
+    .evento-preview:hover {
+        // transform: scale(1.025);
+        background-color: rgba(218, 13, 245, 0.068);
+
+
+   }
+  

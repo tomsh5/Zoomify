@@ -1,0 +1,42 @@
+.login-page{
+    display: flex;
+    justify-content: center;
+    
+    
+    input{
+        width: 200px;
+        height: 30px;
+        box-sizing: border-box;
+        line-height: 30px;
+        font-size:14px;
+        border:0;
+        background: none;
+        border-bottom:1px solid #ccc;
+        outline:none;
+        border-radius: 0;
+        -webkit-appearance: none;
+    }
+
+    button{
+        color: black;
+        margin-top: 50%;
+        font-size: 1rem;
+        font-weight: lighter;
+        text-decoration: none;
+        padding: 0.5rem 0.5rem;
+        outline: none;
+        border-style: solid;
+        border-color: #5e17eb;
+        border-radius: 0.5rem;
+        width: 14rem;
+        text-decoration: none;
+        margin: 2rem auto;
+        cursor: pointer;
+
+        &:hover {
+            transition: 0.3s;
+            color: white;
+           background-color: #5e17eb;
+          }
+    }
+}
