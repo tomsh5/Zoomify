@@ -7,8 +7,11 @@ import "element-ui/lib/theme-chalk/index.css";
 import "./assets/styles/main.scss";
 import ElementUI from "element-ui";
 import { ValidationProvider } from "vee-validate";
-
 import locale from 'element-ui/lib/locale/lang/en'
+
+// import VueSocialSharing from 'vue-social-sharing'
+// Vue.use(VueSocialSharing);
+ 
 
 
 vue.component("ValidationProvider", ValidationProvider);

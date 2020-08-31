@@ -1,4 +1,4 @@
 module.exports = {
 	//dbURL: "mongodb://localhost:27017",
-	"dbURL": "mongodb+srv://uri:1qwer432@cluster0.o9cgp.mongodb.net/zoomify?retryWrites=true&w=majority",
+	"dbURL": "mongodb+srv://tomsh5:9UaPzFXMluf39ZVW@cluster0.mo1ni.mongodb.net/zoomify?retryWrites=true&w=majority",
 };

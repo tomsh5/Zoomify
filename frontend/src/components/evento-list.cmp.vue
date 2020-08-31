@@ -1,7 +1,6 @@
 <template>
       <section class="list-container">
       <div v-for="evento in eventos" :key="evento.id">
-      <!-- <div v-for="evento in eventos" :key="evento._id"> -->
           <evento-preview :evento="evento" />
       </div>
       </section>
