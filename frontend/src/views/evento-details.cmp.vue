@@ -67,18 +67,6 @@
           <p>{{evento.about}}</p>
         </div>
 
-        <!-- <div class="reviews">
-          <div v-for="review in evento.reviews" :key="review.id">
-            <avatar :src="review.imgUrl"></avatar>
-            <p class="review-title">
-              {{review.givenRating}}
-              <i class="fas fa-star"></i>
-              {{review.fullName}}
-            </p>
-            <p>{{review.txt}}</p>
-          </div>
-        </div>-->
-
         <section class="reviews-container">
           <div class="flex space-between">
             <h3>Reviews</h3>

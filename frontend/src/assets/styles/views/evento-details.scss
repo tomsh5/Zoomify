@@ -4,6 +4,13 @@
     }
 }
 
+.evento-content {
+
+    @include for-wide-layout {
+        flex-direction: column;
+    }
+}
+
 .join-modal {
     background-color: white;
 }
@@ -11,6 +18,7 @@
 .join-modal-confirm-btn {
     background-color: #19D1A3;
     border: none;
+
     &:hover {
         background-color: #00b185;
     }
@@ -28,29 +36,22 @@
     }
 }
 
-
-
-.video-modal{
-    // width: 620px;
-    // height: 510px;
+.video-modal {
     width: 39rem;
     height: 31.5rem;
 
     .video-modal-confirm-btn {
-    // display: hidden;
-    border: none;
-    background-color: white;
-    color: grey;
+        border: none;
+        background-color: white;
+        color: grey;
 
-    &:hover {
-        color: white;
-        background-color: $clr1;
+        &:hover {
+            color: white;
+            background-color: $clr1;
+        }
+
     }
-
 }
-}
-
-
 
 
 .top-desc {
@@ -58,12 +59,18 @@
     width: 70%;
     margin-left: 1rem;
     border-right: 1px solid rgb(211, 211, 211);
+
+    @include for-wide-layout {
+        width: 100%;
+        border: none;
+        
+    }
 }
 
 .evento-details-title {
     text-align: left;
 
-    .creator-img{
+    .creator-img {
         width: 20px;
     }
 }
@@ -91,7 +98,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     // grid-gap: 5px;
-    
+
     color: $clr3;
 
     i {
@@ -105,35 +112,42 @@
     margin-bottom: 3rem;
 }
 
-.about-creator{
+.about-creator {
     margin-bottom: 3rem;
 }
 
 .about-creator-title {
-    h3{
+    h3 {
         margin-left: 1rem;
     }
 }
 
-.evento-details span{
+.evento-details span {
     font-weight: bold;
 }
 
 .action-container {
     // background-color: yellow;
-    border-bottom: 1px solid  rgb(209, 209, 209);
+    border-bottom: 1px solid rgb(209, 209, 209);
 }
 
-.evento-join{
+.evento-join {
     width: 30%;
-    padding: 0 1rem;
+    // padding: 0 1rem;
+    padding-left: 1rem;
+
+    @include for-wide-layout {
+        width: 100%;
+        padding-left: 0rem;
+    }
+
 }
 
-.evento-start{
+.evento-start {
     // background-color: #5e17eb;
     // margin-bottom: 100px;
     // margin-top: 10px;
-   
+
     // border-width: 1rem;
     // border-color: #5e17eb;
     // border-radius: 0.5rem;
@@ -146,7 +160,7 @@
     }
 }
 
-.members-container{
+.members-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
     grid-gap: 5px;
@@ -160,16 +174,16 @@
 }
 
 .guest-sign {
-    input{
+    input {
         width: 200px;
         height: 30px;
         box-sizing: border-box;
         line-height: 30px;
-        font-size:14px;
-        border:0;
+        font-size: 14px;
+        border: 0;
         background: none;
-        border-bottom:1px solid #ccc;
-        outline:none;
+        border-bottom: 1px solid #ccc;
+        outline: none;
         border-radius: 0;
         -webkit-appearance: none;
     }
@@ -212,11 +226,12 @@
     cursor: pointer;
 
     &:hover {
-         background-color: $clr1;
+        background-color: $clr1;
     }
 
 
 }
+
 .start-btn {
     display: block;
     background-color: $clr1;
@@ -239,7 +254,7 @@
 }
 
 
-.start-btn{
+.start-btn {
     padding: 0.5rem 0.5rem;
 }
 
@@ -248,7 +263,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
     grid-column-gap: 0.4rem;
-    
+
     img {
         width: 100%;
     }
@@ -256,37 +271,38 @@
 
 .reviews-container {
 
-          border-top: 1px solid  rgb(209, 209, 209);
+    border-top: 1px solid rgb(209, 209, 209);
 
-          h4 {
-              color: #978d8d;
-            cursor: pointer;
+    h4 {
+        color: #978d8d;
+        cursor: pointer;
 
-          }
+    }
 
 
     .reviews {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-    
+
         // grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
         // grid-column-gap: 0.5rem;
         font-size: 0.8rem;
-    
+
         .review {
             width: 150px;
             margin: 0.5rem;
             margin-bottom: 5rem;
             // font-family: 'Open Sans', sans-serif;
 
-           
+
         }
-    
+
         img {
             width: 100%;
             // display: flex;
         }
+
         .review-title {
             font-weight: bold;
         }
@@ -294,16 +310,17 @@
 
 }
 
-        .fa-star{
-            color: #ffbf00;
-        }
+.fa-star {
+    color: #ffbf00;
+}
 
 .related-lectures-container {
 
-          border-top: 1px solid  rgb(209, 209, 209);
-          margin-top: 2rem;
-          p {
-              line-height: initial;
-          }
+    border-top: 1px solid rgb(209, 209, 209);
+    margin-top: 2rem;
+
+    p {
+        line-height: initial;
+    }
 
 }

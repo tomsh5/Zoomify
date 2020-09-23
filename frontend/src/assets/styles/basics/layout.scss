@@ -13,4 +13,27 @@
         }
     }
 
+    @include for-narrow-layout {
+        grid-template-columns:
+        minmax(1rem, 1fr)
+        minmax(auto, $break-narrow)
+        minmax(1rem, 1fr);
+    }
+
+}
+.nerrow-layout{
+
+    display: grid;
+    grid-template-columns: 1rem 1fr 1rem;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+
+    > * {
+        grid-column: 2;
+
+        &.full {
+            grid-column: 1 /-1;
+        }
+    }
+
 }

@@ -1,7 +1,14 @@
 .evento-chat{
     position: relative;
     background-color: #F2F5F8;
-    
+    min-width: 20rem;
+    max-width: 40rem;
+
+
+    @include for-wide-layout {
+        margin: 0 auto;
+    }
+   
 
     .chat-body{
         height: 25rem;
@@ -28,8 +35,7 @@
             border: 2px $clr7 solid;
             padding: 0.3rem 1rem;
             margin-right: 0.0rem;
-            min-width: 18.3rem;
-            // max-width: 26rem;
+            width: 80%;
         }
     
         ::placeholder{
@@ -40,11 +46,12 @@
             left: 0rem;
             top: 28rem;
             border: none;
-            // max-width: 26rem;
+            width: 100%;
         }
     
         .send-btn{
             display:inline-block;
+            width: 20%;
             color: $clr5;
             background-color: $clr6;
             font-size: 0.9rem;
@@ -56,10 +63,6 @@
             text-decoration: none;
             cursor: pointer;
         }
-
-    
-    
-
 
     ul{
         list-style: none;

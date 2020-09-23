@@ -1,0 +1,75 @@
+.user-profile{
+    position: relative;
+
+    .router-link-active{
+        background:red;
+      }
+
+.profile-nav{
+    border: 1px solid black;
+    width: 30rem;
+    
+    h2{
+        text-align: center;
+    }
+
+    text-decoration: none;
+
+    li{
+        cursor: pointer;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+
+        &:hover {
+            color: $clr1;
+        }
+    }
+}
+
+.main-profile{
+    border: 1px solid black;
+    height: 35rem;
+    width: 80%;
+    margin-left: 2rem;
+}
+
+.profile-nav{
+    text-decoration: none;
+    padding: 1rem 2.2rem 0 2.2rem;
+    color: $clr3;
+    font-size: 1.5rem;
+    border-bottom: 1px solid  rgb(224, 224, 224);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+}
+
+a {
+    color: $clr3;
+    font-size: 1rem;
+    margin-right: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.25s ease-in;
+    &:hover {
+      color: $clr1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

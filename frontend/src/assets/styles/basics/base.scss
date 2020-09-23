@@ -7,16 +7,29 @@
   color: $clr2;
 }
 
-
-body, html {
+@font-face {
+  font-family: Mada;
+  src: url(/frontend/src/assets/fonts/Mada/Mada-Medium.ttf);
+}
+@font-face {
+  font-family: Mallanna;
+  src: url(/frontend/src/assets/fonts/Mallanna/Mallanna-Regular.ttf);
+}
+html {
   background-color: white;
   color: $clr2;
-    margin: 0;
     width: 100%;
     height: 100vh;
-    font-family: 'Open Sans', sans-serif;
+    // font-family: 'Open Sans', sans-serif;
     // font-family: 'Raleway-Medium';
+    // font-family: 'VarelaRound-Regular';
+  // font-family: Mada;
+  font-family: Mallanna, sans-serif;
     // font-weight: lighter;
+}
+
+body{
+  margin: 0;
 }
 
 
@@ -25,10 +38,23 @@ button{
   outline: none;
 }
 
-// h1,h2,h3,h4{
-//   // font-family: 'VarelaRound-Regular';
+ul {
+  list-style-type: none;
+}
 
-// }
+li{
+  cursor: pointer;
+}
+a{
+  cursor: pointer;
+}
+
+h1,h2,h3,h4{
+  font-family: Mallanna, sans-serif;
+  // font-weight: normal;
+  // font-family: Mada, serif;
+}
+
 
 
 

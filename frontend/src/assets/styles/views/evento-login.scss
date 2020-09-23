@@ -1,8 +1,7 @@
 .login-page{
     display: flex;
     justify-content: center;
-    
-    
+
     input{
         width: 200px;
         height: 30px;
@@ -18,25 +17,26 @@
     }
 
     button{
-        color: black;
+        color: white;
         margin-top: 50%;
         font-size: 1rem;
         font-weight: lighter;
         text-decoration: none;
         padding: 0.5rem 0.5rem;
-        outline: none;
-        border-style: solid;
-        border-color: #5e17eb;
+        background-color: $clr1;
         border-radius: 0.5rem;
         width: 14rem;
         text-decoration: none;
         margin: 2rem auto;
-        cursor: pointer;
 
         &:hover {
             transition: 0.3s;
-            color: white;
-           background-color: #5e17eb;
+           background-color: darken($color: $clr1, $amount: 10%)
           }
     }
+
+    a{
+        cursor: pointer;
+        color: $clr9;
+      }
 }

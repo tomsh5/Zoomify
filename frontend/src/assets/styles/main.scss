@@ -14,7 +14,7 @@
 @import './views/home.scss';
 @import './views/evento-login.scss';
 @import './views/about.scss';
-// @import './views/user-profile';
+@import './views/user-profile';
 @import './views/evento-details.scss';
 @import './views/evento-edit.scss';
 // @import './views/dashboard';
@@ -26,4 +26,7 @@
 @import './cmps/evento-filter.scss';
 @import './cmps/evento-preview.scss';
 @import './cmps/evento-chat.scss';
+@import './cmps/user-details.scss';
+@import './cmps/created-events.scss';
+@import './cmps/joined-events.scss';
 

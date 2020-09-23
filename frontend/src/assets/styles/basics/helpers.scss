@@ -23,6 +23,9 @@
 .column {
     flex-direction: column;
 }
+.row {
+    flex-direction: row;
+}
 
 .wrap {
     flex-wrap: wrap;
@@ -45,4 +48,12 @@
 }
 .grid {
     display: grid;
+}
+
+.margin-b-20{
+    margin-bottom: 1.5rem;
+}
+
+.margin-l-20{
+    margin-left: 1.5rem;
 }

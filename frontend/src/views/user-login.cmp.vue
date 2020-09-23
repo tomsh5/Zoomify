@@ -7,20 +7,24 @@
       <h3>
         Loggedin User:
         {{loggedInUser.fullName}}
-        <form @submit.prevent="updateUser">
+        <!-- <form @submit.prevent="updateUser">
           <input type="text" v-model="userToEdit.fullName" />
-        </form>
+        </form> -->
         <button @click="doLogout">Logout</button>
       </h3>
     </div>
 
     <div v-else>
+      <div v-if="isSign">
       <h2> Login </h2>
     <form class="flex column" @submit.prevent="doLogin">
       <input type="text" v-model="loginCred.email" placeholder="Email">
       <input type="text" v-model="loginCred.password" placeholder="Password">
       <button> Login </button>
     </form>
+    <span>New user? <a @click="isSign = false">Signup</a></span>
+    </div>
+    <div v-else>
       <h2> Signup </h2>
     <form class="flex column" @submit.prevent="doSignup">
       <input type="text" v-model="signupCred.fullName" placeholder="Full name">
@@ -28,6 +32,8 @@
       <input type="text" v-model="signupCred.password" placeholder="Password">
       <button> Signup </button>
     </form>
+    <a @click="isSign = true">Back to Login</a>
+    </div>
     </div>
   </div>
 
@@ -41,12 +47,13 @@ export default {
   data() {
     return {
       loginCred: {
-        email: 'yyy',
-        password: 'yyy'
+        email: '1',
+        password: '1'
       },
       signupCred: {},
       msg: '',
-      userToEdit: {}
+      userToEdit: {},
+      isSign: true
     }
   },
   computed: {
@@ -65,6 +72,7 @@ export default {
       console.log('login in cmp', cred);
       await this.$store.dispatch({type :'login', userCred: cred})
       this.loginCred = {};
+      this.$router.push('/')
       
     },   
     doSignup() {
@@ -94,6 +102,11 @@ export default {
   },
   created() {
     
-  }  
+  },
+  destroyed(){
+    this.isSign = true
+  }
+
+
 }
 </script>

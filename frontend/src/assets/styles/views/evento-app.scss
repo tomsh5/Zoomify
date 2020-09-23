@@ -4,38 +4,43 @@
         position: absolute;
         color: white;
         text-shadow: 1px 1px 3px black;
-        // justify-content: center;
         text-align: center;
         margin: 6% 0 0 40%;
-        // width: 10rem;
         font-size: 3rem;
         display: inline;
+
+        @include for-narrow-layout {
+            font-size: 1.5rem;
+        }
     }
-    
+
     .hero-list-img {
+        margin-bottom: 1rem;
         width: 100%;
     }
-    
+
+    @include for-narrow-layout {
+        display: none;
     }
-    
+}
+
 .evento-app-content {
     margin: 0 5rem;
 
-    .list-filter {
-        // border-bottom: 1px solid  rgb(224, 224, 224);
-        margin-bottom: 1.5rem;
-        
-    }
-    // .evento-list {
-    //     margin: 2rem 5rem;
-    // }
-
 }
-    .evento-list {
-        margin: 2rem 5rem;
-    }
 
-   .isLoading{
+.list-filter {
+
+    @include for-narrow-layout {
+        margin-top: 1.5rem;
+    }
+}
+
+.evento-list {
+    margin: 2rem 0rem;
+}
+
+.isLoading {
     display: flex;
     justify-content: center;
-    }
+}
